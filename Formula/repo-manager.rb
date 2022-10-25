@@ -5,13 +5,13 @@
 class RepoManager < Formula
   desc "Repo manager allows you to check repo dependencies."
   homepage "https://github.com/kazhuravlev/repo-manager"
-  version "0.1.1"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kazhuravlev/repo-manager/releases/download/v0.1.1/repo-manager_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "11b220aff925023868a5b354cf60da7c818a553fd13a618636cbe6174d33a4d5"
+      url "https://github.com/kazhuravlev/repo-manager/releases/download/v0.2.1/repo-manager_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "049f8849eadb9bc88c8d114e059869cb566f5124fd429393fef195d7e87d46be"
 
       def install
         bin.install "repo-manager"
@@ -21,8 +21,8 @@ class RepoManager < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kazhuravlev/repo-manager/releases/download/v0.1.1/repo-manager_0.1.1_Linux_arm64.tar.gz"
-      sha256 "3686886a9c77c3bd84b705e6c1f1d4b1c52cbba4b6d4bf4b2f920be25d0c3ac3"
+      url "https://github.com/kazhuravlev/repo-manager/releases/download/v0.2.1/repo-manager_0.2.1_Linux_arm64.tar.gz"
+      sha256 "93bcce9a7199c98497866a69ad09be9e47149bc98e55de9413af33c57def3c32"
 
       def install
         bin.install "repo-manager"
